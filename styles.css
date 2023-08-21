@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(#949099, #33675d);
+}
+
+#x-axis,
+#y-axis,
+#legend-axis {
+  color: linen;
+}
+
+#tooltip {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  color: linen;
+}
+
+.margin {
+  margin: 20px 0;
+}
+
+#credit > a {
+  color: linen;
+}
+
+@media screen and (max-height: 700px), screen and (max-width: 1200px) {
+  #container {
+    transform: scale(0.7);
+  }
+}
